@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.theartofdev.edmodo.cropper.CropImageView android:id="@+id/crop_image_view" android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="100dp" android:layout_weight="1"/>
+    <EditText android:id="@+id/et_scan_result_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="200dp" android:ems="10" android:inputType="textMultiLine"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton android:id="@+id/btn_open_gallery" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:onClick="onLoadImageClick" app:srcCompat="@android:drawable/ic_menu_gallery" app:backgroundTint="#388e3c"/>
+        <android.support.design.widget.FloatingActionButton android:id="@+id/btn_crop_img" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:onClick="onCropImageClick" app:srcCompat="@android:drawable/ic_menu_crop" app:backgroundTint="#ff5722"/>
+        <android.support.design.widget.FloatingActionButton android:id="@+id/btn_save_image_data" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:onClick="onSaveImageData" app:srcCompat="@android:drawable/ic_menu_save" app:backgroundTint="#1976d2"/>
+        <android.support.design.widget.FloatingActionButton android:id="@+id/btn_scan_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:onClick="onGoBack" app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" app:backgroundTint="#d32f2f"/>
+    </LinearLayout>
+</LinearLayout>

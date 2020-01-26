@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="categories">
+        <item>Clothing</item>
+        <item>Charitable Giving</item>
+        <item>Education</item>
+        <item>Electronics</item>
+        <item>Entertainment</item>
+        <item>Fitness</item>
+        <item>Food</item>
+        <item>Gifts</item>
+        <item>Health</item>
+        <item>Household</item>
+        <item>Investments</item>
+        <item>Loan Payment</item>
+        <item>Miscellaneous</item>
+        <item>Rent</item>
+        <item>Transportation</item>
+        <item>Utility Bills</item>
+        <item>Vacation</item>
+    </array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2.2">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1" android:layout_weight="0.2">
+            <android.support.p003v7.widget.RecyclerView android:id="@+id/rv_monthly_colors" android:background="#ffffff" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="4" android:layout_weight="1">
+            <com.github.mikephil.charting.charts.PieChart android:id="@+id/pie_chart_balance_m_credit" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3.5"/>
+            <TextView android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="Credit" android:layout_weight="0.5"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="20dp" android:weightSum="4" android:layout_weight="1">
+            <com.github.mikephil.charting.charts.PieChart android:id="@+id/pie_chart_balance_m_debit" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3.5"/>
+            <TextView android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="Debit" android:layout_weight="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

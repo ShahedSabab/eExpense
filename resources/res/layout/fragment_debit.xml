@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/lv_debits" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/footer_layout" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="22sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total:"/>
+        <TextView android:textSize="22sp" android:textStyle="bold" android:id="@+id/text_view_amount_debit" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+    </LinearLayout>
+    <TextView android:textSize="22sp" android:id="@+id/empty_view_debit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="            No debit found!\10Tap the button below to add." android:layout_centerInParent="true"/>
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab_debit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:srcCompat="@drawable/ic_add" app:backgroundTint="@color/colorPrimary"/>
+</RelativeLayout>

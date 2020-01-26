@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="backbencers.nub.dailycostcalc" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_e_expense_flat" android:debuggable="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round">
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="ocr"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/app_name" android:name="backbencers.nub.dailycostcalc.activities.MainActivity" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/scan" android:name="backbencers.nub.dailycostcalc.activities.ScanActivity" android:screenOrientation="portrait" android:parentActivityName="backbencers.nub.dailycostcalc.activities.DebitEditorActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.DebitEditorActivity"/>
+        </activity>
+        <activity android:label="@string/add_credit" android:name="backbencers.nub.dailycostcalc.activities.CreditEditorActivity" android:screenOrientation="portrait" android:parentActivityName="backbencers.nub.dailycostcalc.activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
+        <activity android:label="@string/add_debit" android:name="backbencers.nub.dailycostcalc.activities.DebitEditorActivity" android:screenOrientation="portrait" android:parentActivityName="backbencers.nub.dailycostcalc.activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
+        <activity android:theme="@style/SplashTheme" android:name="backbencers.nub.dailycostcalc.activities.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

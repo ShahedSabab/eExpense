@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_credit_date" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <EditText android:textSize="22sp" android:id="@+id/edit_text_credit_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Date" android:inputType="none|text|textUri|datetime|date"/>
+            </android.support.design.widget.TextInputLayout>
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/image_button_credit_calendar" android:background="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/calendar"/>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_credit_category" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <AutoCompleteTextView android:textSize="22sp" android:id="@+id/auto_complete_credit_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Category"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_credit_amount" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="22sp" android:id="@+id/edit_text_credit_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Amount" android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_credit_description" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="22sp" android:gravity="start" android:id="@+id/edit_text_credit_description" android:layout_width="match_parent" android:layout_height="160dp" android:hint="Description" android:inputType="textMultiLine"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

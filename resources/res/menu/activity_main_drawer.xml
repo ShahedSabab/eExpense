@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/menu_top" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_debit" android:id="@+id/nav_debit" android:title="Debit"/>
+        <item android:icon="@drawable/ic_credit" android:id="@+id/nav_credit" android:title="Credit"/>
+        <item android:icon="@drawable/ic_balance" android:id="@+id/nav_balance" android:title="Balance"/>
+        <item android:icon="@drawable/ic_history" android:id="@+id/nav_history" android:title="History"/>
+    </group>
+    <group android:id="@+id/menu_bottom" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_about_us" android:id="@+id/nav_about" android:title="About"/>
+        <item android:icon="@drawable/ic_help" android:id="@+id/nav_help" android:title="Help"/>
+    </group>
+</menu>

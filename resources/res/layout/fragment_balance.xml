@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:name="backbencers.nub.dailycostcalc.fragments.YearlyBalanceFragment" android:id="@+id/fragment_place" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/rg_balance_chart" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkedButton="@+id/rb_yearly">
+            <RadioButton android:id="@+id/rb_yearly" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Yearly"/>
+            <RadioButton android:id="@+id/rb_monthly" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Monthly"/>
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

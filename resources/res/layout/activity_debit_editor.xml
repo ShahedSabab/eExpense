@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_scan_debit">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_debit_date" android:padding="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <EditText android:textSize="22sp" android:id="@+id/edit_text_debit_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Date" android:inputType="none|text|textUri|datetime|date"/>
+                </android.support.design.widget.TextInputLayout>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@+id/image_button_debit_calendar" android:background="#eeeeee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/calendar"/>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_debit_category" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <AutoCompleteTextView android:textSize="22sp" android:id="@+id/auto_complete_debit_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Category"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_debit_amount" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="22sp" android:id="@+id/edit_text_debit_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Amount" android:inputType="numberDecimal"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_debit_description" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="22sp" android:gravity="start" android:id="@+id/edit_text_debit_description" android:layout_width="match_parent" android:layout_height="160dp" android:hint="Description" android:inputType="textMultiLine"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="22sp" android:id="@+id/btn_scan_debit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  Scan" android:drawableLeft="@android:drawable/ic_menu_camera" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>
